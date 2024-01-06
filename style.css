@@ -39,33 +39,33 @@ html,body{
 #center{
     width: 100%;
     /* background-color: red; */
-    padding: 40px 80px;
+    padding: 20px 80px;
 }
 #center h1{
-    font-size: 4vw;
+    font-size: 3.5vw;
     font-weight: 500;
-    line-height: 65px;
+    line-height:4.2vw;
 }
 #center-in{
-    height: 200px;
+    /* height: 200px; */
     width: 100%;
     /* background-color: red; */
-    margin-top: 30px;
+    margin-top: 20px;
     display: flex;
     justify-content: space-between;
     
 }
 #center-in p{
-    font-size:18px;
-    font-weight: 600;
-    line-height: 32px;
+    font-size:1.3vw;
+    font-weight: 500;
+    line-height: 1.7vw;
 }
 #right{
     width: 20%;
 
 }
 .elem{
-    padding: 15px 0 ;
+    padding: 10px 0 ;
     /* background-color: yellow; */
     /* margin: 5px; */
     border-top:2px solid black ;
@@ -88,10 +88,63 @@ html,body{
 }
 #bottom{
     width: 100%;
-    height: 27.4vh;
-    margin-top: -7vh;
-    background-color: red;
-    background-image: url(premium_photo-1671382004423-ec8e307804c4\ \(1\).jpg);
+    height: 34.5%;
+    /* margin-top: -7vh; */
+    background-image: url(shopJacket1.jpg);
     background-size: cover;
-    background-position: center;
+    object-fit: cover;
+    background-position: 0 34%;
+}
+@media (max-width:600px){
+    #nav{
+        height: 5vh;
+        gap: 3vw;
+        padding: 0 20px ;
+    }
+    #nav h4{
+        font-size: 2.5vw;
+        font-weight: 500;
+    }
+    #nav i{
+        background-color: black;
+        color: white;
+        padding: 7px;
+    }
+    #center{
+        padding: 15px 20px;
+    }
+    #center h1{
+        font-size: 10vw;
+        line-height:12.5vw;
+    }
+    #center-in{
+        margin-top: 18px;
+        flex-direction: column; 
+        gap: 20px;  
+    }
+    #center-in p{
+        font-size:3.5vw;
+        font-weight: 500;
+        line-height: 4vw;
+    }
+    #right{
+        width: 100%;
+    
+    }
+    .elem{
+        padding: 8px 0 ;
+        border-top:1.5px solid black ;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .elem a{
+        font-size: 16px;
+    }
+    .elem i{
+        font-size: 18px;
+        font-weight: 500;
+        opacity: 1;
+        color: #303030;
+    }
 }
